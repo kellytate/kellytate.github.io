@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kelly Tate</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="toggle-switch.css">
+</head>
+<body>
+  <header>
+      <nav>
+        <h1>Kelly Tate</h1>
+        <ul>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <label class="toggle-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle">
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
+      </div>
+    </header>
+  <section class="bio">
+    <img class="profile-image" src="https://media.licdn.com/dms/image/D5603AQHKteXCko66WQ/profile-displayphoto-shrink_200_200/0/1681237445179?e=1687996800&v=beta&t=mO4hs1UTWwgED3cnWbnYbC-xoF3vimHoZwVO3Czp6HY"/>
+    <div>
+      <h2>Hi! My name is Kelly Tate. I'm a web developer and full stack engineer.</h2>
+      <p>I am equally interested in the frontend and backend of web development.</p>
+      <a class="btn" href="#" target="blank">See my work</a>
+    </div>
+  </section>
+  <section class="recent-work">
+    <h2>Recent Work</h2>
+    <article>
+      <div>
+        <h3>First Project</h3>
+        <p>Description of Project</p>
+        <strong>Date of Project</strong>
+        <ul>
+          <li>
+            Bullet Point
+          </li>
+          <li>
+            Bullet Point
+          </li>  
+        </ul>
+        
+        <a href="#" target="blank">GitHub Repo</a>
+      </div>
+      <img class="article-image" src="https://media.licdn.com/dms/image/D5603AQHKteXCko66WQ/profile-displayphoto-shrink_200_200/0/1681237445179?e=1687996800&v=beta&t=mO4hs1UTWwgED3cnWbnYbC-xoF3vimHoZwVO3Czp6HY"/>
+    </article>
+    <article>
+        <div>
+          <h3>Project</h3>
+          <p>Data analysis on the conservation statuses of various endangered species living in national parks.</p>
+          <strong>Date of Project</strong>
+          <ul>
+            <li>Analyzed, cleaned, then plotted data using Matplotlib</li>
+            <li>Searched for patterns or themes in data</li>
+            <li>Used Jupyter Notebook to communicate findings and conservation recommendations</li>
+          </ul>
+          <a href="#">GitHub Repo</a>
+        </div>
+        <video class='article-image' controls>
+              <source src='https://static-assets.codecademy.com/assets/livestreams/national_coding_week/park.mp4'>
+        </video>
+      </article>
+  </section>
+  <footer>
+      <ul>
+        <li>
+          <a href="#">
+            LinkedIn
+            <span class="link-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            CV
+            <span class="link-icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            GitHub
+            <span class="link-icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copywright">© 2023 Kelly Tate</p>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
