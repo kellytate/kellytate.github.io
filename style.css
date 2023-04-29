@@ -163,7 +163,25 @@ article .article-image {
 
 .resume_file {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume_file object {
+    border: 1px solid black;
+}
+
+.resume_file a {
+    text-decoration: none;
+}
+
+.download ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
 @media (max-width: 1024px) {
