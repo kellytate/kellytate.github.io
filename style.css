@@ -161,6 +161,11 @@ article .article-image {
     margin-inline-start: 4rem;
 }
 
+.resume_file {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 1024px) {
     article {
         flex-direction: column;
