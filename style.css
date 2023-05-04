@@ -81,16 +81,23 @@ header .controls {
     padding: 1rem 0;
 }
 
+header {
+    background: var(--background);
+    position: fixed;
+    min-width: 1024px;
+}
+
 .bio {
     display: flex;
     align-items: center;
     padding-block-end: 4rem;
+    padding-top: 150px;
 }
 
 .bio .profile-image {
     width: 200px;
     min-width: 200px;
-    border-radius: 90px;
+    border-radius: 100px;
     background: #888;
     margin-inline-end: 4rem;
 }
@@ -120,11 +127,34 @@ a.btn {
     color: var(--background);
     text-decoration: none;
     padding: 0 1rem;
-    height: 2.5rem;
-    border-radius: 1.25rem;
+    height: 3rem;
+    border-radius: 100px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 0.875rem;
+}
+
+.contact ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 1em;
+    list-style: none;
+}
+
+.contact .link-icon {
+    margin-block-start: 0.5rem;
+    background: var(--link);
+    color: var(--background);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .recent-work {
@@ -177,11 +207,8 @@ article .article-image {
     text-decoration: none;
 }
 
-.download ul, li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
+.download {
+    padding: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -223,7 +250,7 @@ footer a {
     align-items: center;
 }
 
-footer .copywright {
+footer .copyright {
     margin: 3rem 0;
 }
 
