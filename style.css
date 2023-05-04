@@ -188,7 +188,8 @@ article li {
 article .article-image {
     width: 512px;
     min-width: 512px;
-    margin-inline-start: 4rem;
+    margin-left: 5%;
+    border-radius: 8px;
 }
 
 .resume_file {
