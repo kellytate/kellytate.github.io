@@ -107,10 +107,15 @@ header {
     .bio .profile-image {
         margin-inline-end: 0;
     }
+
 }
 
 .bio h2 {
     margin-block-end: 0;
+}
+
+.contact h2 {
+    font-size: 3vw;
 }
 
 .bio p {
