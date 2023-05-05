@@ -106,6 +106,7 @@ header {
 
     .bio .profile-image {
         margin-inline-end: 0;
+        
     }
 
 }
@@ -189,7 +190,7 @@ article li {
 
 article .article-image {
     width: 512px;
-    min-width: 512px;
+    max-width: 512px;
     max-height: 271px;
     margin-left: 5%;
     border-radius: 8px;
@@ -221,7 +222,6 @@ article .article-image {
     }
     article .article-image {
         width: 100%;
-        min-width: 100%;
         margin-inline-start: 0;
         margin-block-start: 2rem;
     }
