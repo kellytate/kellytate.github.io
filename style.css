@@ -83,8 +83,6 @@ header .controls {
 
 header {
     background: var(--background);
-    position: fixed;
-    min-width: 1024px;
 }
 
 .bio {
