@@ -18,18 +18,22 @@ toggle.addEventListener('click', () => {
   bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`))
   bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`))
   bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`))
+  save()
 })
 
-var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
-if (checked == true) {
-    document.getElementById("dark-mode-toggle").checked = true;
-}
+// var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
+// if (checked === true) {
+//   document.getElementById("dark-mode-toggle").checked = true;
+// }
+// else {
+//   document.getElementById("dark-mode-toggle").checked = true;
+// }
 
 function load(){    
   var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
   document.getElementById("dark-mode-toggle").checked = checked;
 
-  const mode = checked.checked ? 'dark' : 'light'
+  const mode = toggle.checked ? 'dark' : 'light'
   bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`))
   bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`))
   bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`))
