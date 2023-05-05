@@ -28,6 +28,11 @@ if (checked == true) {
 function load(){    
   var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
   document.getElementById("dark-mode-toggle").checked = checked;
+
+  const mode = checked.checked ? 'dark' : 'light'
+  bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`))
+  bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`))
+  bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`))
 }
 
 function save(){
