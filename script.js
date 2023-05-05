@@ -20,3 +20,17 @@ toggle.addEventListener('click', () => {
   bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`))
 })
 
+var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
+if (checked == true) {
+    document.getElementById("dark-mode-toggle").checked = true;
+}
+
+function load(){    
+  var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
+  document.getElementById("dark-mode-toggle").checked = checked;
+}
+
+function save(){
+  var checkbox = document.getElementById('dark-mode-toggle');
+  localStorage.setItem('dark-mode-toggle', checkbox.checked);
+}
