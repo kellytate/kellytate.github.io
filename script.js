@@ -122,3 +122,22 @@ function save() {
   var checkbox = document.getElementById('dark-mode-toggle');
   localStorage.setItem('dark-mode-toggle', checkbox.checked);
 }
+
+
+// Creates lightbox effect
+
+var images = document.querySelectorAll(".image");
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function() {
+    var imageUrl = this.src;
+    var lightbox = document.createElement("div");
+    lightbox.classList.add("lightbox");
+    var image = document.createElement("img");
+    image.src = imageUrl;
+    lightbox.appendChild(image);
+    document.body.appendChild(lightbox);
+    lightbox.addEventListener("click", function() {
+      document.body.removeChild(lightbox);
+    });
+  });
+}
