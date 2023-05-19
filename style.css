@@ -165,6 +165,23 @@ a.btn {
     font-size: 1.5rem;
 }
 
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 2em;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+.ios {
+    height: 40vh !important;
+    width: 10vw !important;
+}
+
 .recent-work {
     padding-block-end: 3rem;
 }
@@ -214,10 +231,6 @@ article .article-image:hover{
     outline:rgba(109, 109, 1, 0.1);
     box-shadow: 0 0 5px #79a097;
     cursor: pointer;
-}
-
-article .logo {
-    max-height: 100px;
 }
 
 .resume_file {
