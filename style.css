@@ -10,10 +10,13 @@ body {
     transition: color 0.5s;
     transition: background 0.5s;
 
-    --dark-background: #1e1e1e;
-    --dark-primary: #f9f3e5;
-    --dark-link: #79a097;
+}
 
+a {
+    color: var(--link);
+}
+
+.light-theme {
     --light-background: #f9f3e5;
     --light-primary: #1e1e1e;
     --light-link: #79a097;
@@ -21,10 +24,6 @@ body {
     --background: var(--light-background);
     --primary: var(--light-primary);
     --link: var(--light-link); 
-}
-
-a {
-    color: var(--link);
 }
 
 h1,
@@ -305,3 +304,12 @@ footer .link-icon {
     max-height: 80%;
     border-radius: 8px;
   }
+
+.dark-theme {
+    --dark-background: #1e1e1e;
+    --dark-primary: #f9f3e5;
+    --dark-link: #79a097;
+    --background: var(--dark-background);
+    --primary: var(--dark-primary);
+    --link: var(--dark-link); 
+}
