@@ -1,3 +1,29 @@
+// Adds dark/light mode functionality
+let toggle = document.querySelector('#dark-mode-toggle');
+toggle.addEventListener('click', () => { 
+  updateMode();
+})
+
+function updateMode() {
+  let mode = toggle.checked ? 'dark' : 'light';
+  saveColorMode(mode);
+  setColorMode(mode);
+  saveToggle();
+}
+
+function loadToggle() {    
+  var checked = JSON.parse(window.localStorage.getItem('dark-mode-toggle'));
+  document.getElementById("dark-mode-toggle").checked = checked;
+}
+
+loadToggle();
+
+function saveToggle() {
+  var checkbox = document.getElementById('dark-mode-toggle');
+  window.localStorage.setItem('dark-mode-toggle', checkbox.checked);
+}
+
+
 // Adds navigation functionality.
 let contactBtn = document.querySelector('#contact-link');
 
@@ -83,32 +109,6 @@ indexBtn.addEventListener('click', () => {
     recentWork.classList.remove("hide");
   }
 })
-
-// Adds dark/light mode functionality
-let toggle = document.querySelector('#dark-mode-toggle');
-toggle.addEventListener('click', () => { 
-  updateMode();
-})
-
-function updateMode() {
-  let mode = toggle.checked ? 'dark' : 'light';
-  saveColorMode(mode);
-  setColorMode(mode);
-  saveToggle();
-}
-
-function loadToggle() {    
-  var checked = JSON.parse(window.localStorage.getItem('dark-mode-toggle'));
-  document.getElementById("dark-mode-toggle").checked = checked;
-}
-
-loadToggle();
-
-function saveToggle() {
-  var checkbox = document.getElementById('dark-mode-toggle');
-  window.localStorage.setItem('dark-mode-toggle', checkbox.checked);
-}
-
 
 // Creates lightbox effect
 
