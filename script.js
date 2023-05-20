@@ -1,16 +1,44 @@
-class CssPropControl {
-  constructor(element) {
-    this.element = element;
-  }
-  get(varName) {
-    return getComputedStyle(this.element).getPropertyValue(varName);
-  }
-  set(varName, val) {
-    return this.element.style.setProperty(varName, val);
-  }
+// Adds dark/light mode functionality
+let toggle = document.querySelector('#dark-mode-toggle');
+toggle.addEventListener('click', () => { 
+  updateMode();
+})
+
+function updateMode() {
+  let mode = toggle.checked ? 'dark' : 'light';
+  saveColorMode(mode);
+  setColorMode(mode);
+  saveToggle();
 }
 
-const bodyCssProps = new CssPropControl(document.body);
+function loadToggle() {    
+  var checked = JSON.parse(window.localStorage.getItem('dark-mode-toggle'));
+  document.getElementById("dark-mode-toggle").checked = checked;
+}
+
+loadToggle();
+
+function saveToggle() {
+  var checkbox = document.getElementById('dark-mode-toggle');
+  window.localStorage.setItem('dark-mode-toggle', checkbox.checked);
+}
+
+// Creates lightbox effect
+var images = document.querySelectorAll(".image");
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function() {
+    var imageUrl = this.src;
+    var lightbox = document.createElement("div");
+    lightbox.classList.add("lightbox");
+    var image = document.createElement("img");
+    image.src = imageUrl;
+    lightbox.appendChild(image);
+    document.body.appendChild(lightbox);
+    lightbox.addEventListener("click", function() {
+      document.body.removeChild(lightbox);
+    });
+  });
+}
 
 // Adds navigation functionality.
 let contactBtn = document.querySelector('#contact-link');
@@ -98,46 +126,3 @@ indexBtn.addEventListener('click', () => {
   }
 })
 
-// Adds dark/light mode functionality
-let toggle = document.querySelector('#dark-mode-toggle');
-toggle.addEventListener('click', () => { 
-  setMode();
-  save();
-})
-
-function setMode() {
-  let mode = toggle.checked ? 'dark' : 'light';
-  bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`));
-  bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`));
-  bodyCssProps.set('--link', bodyCssProps.get(`--${mode}-link`));
-}
-
-function load() {    
-  var checked = JSON.parse(localStorage.getItem('dark-mode-toggle'));
-  document.getElementById("dark-mode-toggle").checked = checked;
-  setMode();
-}
-
-function save() {
-  var checkbox = document.getElementById('dark-mode-toggle');
-  localStorage.setItem('dark-mode-toggle', checkbox.checked);
-}
-
-
-// Creates lightbox effect
-
-var images = document.querySelectorAll(".image");
-for (var i = 0; i < images.length; i++) {
-  images[i].addEventListener("click", function() {
-    var imageUrl = this.src;
-    var lightbox = document.createElement("div");
-    lightbox.classList.add("lightbox");
-    var image = document.createElement("img");
-    image.src = imageUrl;
-    lightbox.appendChild(image);
-    document.body.appendChild(lightbox);
-    lightbox.addEventListener("click", function() {
-      document.body.removeChild(lightbox);
-    });
-  });
-}
