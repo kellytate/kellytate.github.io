@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html class="light-theme">
 <html>
 <head>
   <title>Kelly Tate</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <script src="mode-script.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
@@ -10,32 +11,31 @@
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="toggle-switch.css">
 </head>
-
-<body onload="load()">
+<body>
   <header>
-      <nav>
-        <h1><a id="index-link" href="#">Kelly Tate</a></h1>
-        <ul>
-          <li><a id="recent-work-link" href="#recent-work">Work</a></li>
-          <li><a id="resume-link" href="#">Resume</a></li>
-          <li><a id="contact-link" href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <h1><a id="index-link" href="#">Kelly Tate</a></h1>
+      <ul>
+        <li><a id="recent-work-link" href="#recent-work">Work</a></li>
+        <li><a id="resume-link" href="#">Resume</a></li>
+        <li><a id="contact-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
     <div class="controls">
-        <label class="toggle-switch">
-          Dark Mode
-          <input type="checkbox" id="dark-mode-toggle">
-          <div class="toggle-switch-border">
-          <div class="toggle-switch-dot"></div>
-          </div>
-        </label>
-     </div>
-    </header>
-    <section id="bio" class="bio index resume">
+      <label class="toggle-switch">
+        Dark Mode
+        <input type="checkbox" id="dark-mode-toggle">
+        <div class="toggle-switch-border">
+        <div class="toggle-switch-dot"></div>
+        </div>
+      </label>
+    </div>
+  </header>
+  <section id="bio" class="bio index resume">
     <img class="profile-image" src="https://media.licdn.com/dms/image/D5603AQHKteXCko66WQ/profile-displayphoto-shrink_200_200/0/1681237445179?e=1687996800&v=beta&t=mO4hs1UTWwgED3cnWbnYbC-xoF3vimHoZwVO3Czp6HY"/>
     <div>
-        <h2>Hi! My name is Kelly Tate. I'm a web developer and full stack engineer.</h2>
-        <p>I get excited about front-end development. I also get excited about back-end development. I love putting things together and solving problems.</p>
+      <h2>Hi! My name is Kelly Tate. I'm a web developer and full stack engineer.</h2>
+      <p>I get excited about front-end development. I also get excited about back-end development. I love putting things together and solving problems.</p>
       <div class="contact">
         <ul>
           <li>
@@ -196,7 +196,6 @@
       </ul>
       <p class="copywright">© 2023 Kelly Tate</p>
     </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
