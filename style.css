@@ -14,11 +14,12 @@ body {
 
 a {
     color: var(--link);
+    text-decoration: none;
 }
 
 .light-theme {
-    --light-background: #f9f3e5;
-    --light-primary: #1e1e1e;
+    --light-background: #f9eee5;
+    --light-primary: #141416;
     --light-link: #79a097;
 
     --background: var(--light-background);
@@ -27,8 +28,8 @@ a {
 }
 
 .dark-theme {
-    --dark-background: #1e1e1e;
-    --dark-primary: #f9f3e5;
+    --dark-background: #141416;
+    --dark-primary: #dbdbdb;
     --dark-link: #79a097;
     --background: var(--dark-background);
     --primary: var(--dark-primary);
@@ -182,7 +183,7 @@ a.btn {
 }
 
 .logo {
-    max-height: 100px;
+    max-height: 70px;
 }
 
 .ios {
@@ -199,6 +200,10 @@ a.btn {
     justify-content: center;
     gap: 2em;
     flex-wrap: wrap;
+}
+
+.project-image {
+    width: 100%;
 }
 
 article {
