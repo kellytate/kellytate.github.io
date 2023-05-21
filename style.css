@@ -26,6 +26,15 @@ a {
     --link: var(--light-link); 
 }
 
+.dark-theme {
+    --dark-background: #1e1e1e;
+    --dark-primary: #f9f3e5;
+    --dark-link: #79a097;
+    --background: var(--dark-background);
+    --primary: var(--dark-primary);
+    --link: var(--dark-link); 
+}
+
 h1,
 h2,
 h3 {
