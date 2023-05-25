@@ -39,8 +39,10 @@
     </div> -->
   </header>
   <section id="bio" class="bio index resume">
-    <img class="profile-image" src="https://media.licdn.com/dms/image/D5603AQHKteXCko66WQ/profile-displayphoto-shrink_200_200/0/1681237445179?e=1687996800&v=beta&t=mO4hs1UTWwgED3cnWbnYbC-xoF3vimHoZwVO3Czp6HY"/>
-    <div>
+    <div class="bio-image">
+      <img class="profile-image" src="/images/kelly-bio.jpg">
+    </div>
+    <div class="bio-content">
       <h2>Hi! My name is Kelly Tate. I'm a web developer and full stack engineer.</h2>
       <p>I get excited about front-end development. I also get excited about back-end development. I love putting things together and solving problems.</p>
       <div class="contact">
@@ -70,13 +72,13 @@
   </section>
   <section id="resume" class="resume hide">
     <h2>Resume</h2>
-    <!-- <div class="resume_file"> -->
+    <div class="resume_file">
       <!-- <object data="https://kellytate.github.io/images/KellyTateResume2023.pdf#toolbar=0&navpanes=0&scrollbar=0"" type="application/pdf" style="width:75%;height:600px" aria-label="Embed of KellyTateMainResume1_5."></object> -->
-      <iframe width=75% height=75% src="https://docs.google.com/document/d/e/2PACX-1vS_8aEjexH6QASoQcQtYFhtldLfl8PkBVwAYuSE3kyR1BYDF0lootenekgvwObz55_dNc4pLB_lVdbc/pub?embedded=true"></iframe>
+      <iframe width=75% height=800px src="https://docs.google.com/document/d/e/2PACX-1vS_8aEjexH6QASoQcQtYFhtldLfl8PkBVwAYuSE3kyR1BYDF0lootenekgvwObz55_dNc4pLB_lVdbc/pub?embedded=true"></iframe>
       <!-- <div class="download">
           <a class="btn" href="https://kellytate.github.io/images/KellyTateResume2023.pdf">Download</a>
       </div> -->
-    <!-- </div> -->
+    </div>
   </section>
   <section id="contact" class="bio contact hide">
     <img class="profile-image" src="https://media.licdn.com/dms/image/D5603AQHKteXCko66WQ/profile-displayphoto-shrink_200_200/0/1681237445179?e=1687996800&v=beta&t=mO4hs1UTWwgED3cnWbnYbC-xoF3vimHoZwVO3Czp6HY"/>
@@ -98,112 +100,129 @@
 
   <section id="recent-work" class="recent-work">
     <h2>Recent Work</h2>
-
-    <div class="projects">
-      <div class="container">
-        <img src="/images/adawebsite.png" alt="ada website" class="image">
-      
-        <div class="overlay-bottom-slide">
-          <div class="text">
-            <h3>Ada Developers Academy Website</h3>
-            <p>CMS Website Rebuild</p>
-            <strong>March 2023</strong>
-            <a href="#"><p>Learn More >></p></a>
-          </div>
+      <article>
+        <img class="article-image image" src="/images/adawebsite.png"/>
+        <div class="project-info">
+          <h3>Ada Developers Academy Website</h3>
+          <p>CMS Website Rebuild</p>
+          <strong>March 2023</strong>
+          <strong>Project Timeframe: 4 months</strong>
+          <!-- <ul>
+            <li>
+              Migrated WordPress CMS to optimized theme to improve speed, usability, and SEO efficiency
+            </li>
+            <li>
+              Reduced site reliance on plugins by creating and implementing custom functionality 
+            </li>
+            <li>
+              Improved overall site consistency
+            </li>  
+          </ul> -->
+          
         </div>
-      </div>
-      <div class="container">
-        <img src="/images/limn-mountain-screenshot.png" alt="limn website" class="image">
-        <div class="overlay-bottom-slide">
-          <div class="text">
-            <h3>Limn Social Journal App</h3>
-            <p>Built with Django and PostgreSQL</p>
-            <strong>February 2023</strong>
-            <a href="/limn.html"><p>Learn More >></p></a>
-          </div>
+        
+      </article>
+      <article>
+        <img class="article-image image" src="/images/limn-mountain-screenshot.png"/>
+        <div class="project-info">
+          <h3>Limn</h3>
+          <p>Social Media Journal App built with Django and PostgreSQL</p>
+          <strong>February 2023</strong>
+          <p><strong>Project Timeframe: 10 days</strong></p>
+          <!-- <ul>
+            <li>Initially developed over a period of 10 days</li>
+            <li>Collaborated over the full software development lifecycle, from planning to implementation</li>
+            <li>Integrated journaling app with social media connectivity, visual and audio media, and data analysis and visualization</li>
+            <li>APIs and libraries: Spotify API, LocationIQ, Cloudinary, FullCalendar, amCharts 5, Nano Gallery 2</li>
+          </ul> -->
+          <!-- <div>
+            <img class="logo" src="/logos/python-logo-notext.png"/>
+            <img class="logo" src="/logos/postgresql.svg"/>
+            <img class="logo" src="/logos/django.svg"/>
+          </div> -->
+          <a href="#">GitHub Repo</a>
         </div>
-      </div>
-      <div class="container">
-        <img src="/images/decky-redesign.png" alt="inspiration board" class="image">
-        <div class="overlay-bottom-slide">
-          <div class="text">
-            <h3>d.e.c.k.y Inspiration Board</h3>
-            <p>Built with React and Flask</p>
-            <strong>January 2023</strong>
-            <a href="#"><p>Learn More >></p></a>
-          </div>
+        
+      </article>
+      <article>
+        <img class="article-image image" src="/images/decky-redesign.png"/>
+        <div class="project-info">
+          <h3>d.e.c.k.y Inspiration Board</h3>
+          <p>Inspirational message board built with React and Flask</p>
+          <strong>January 2023</strong>
+          <p><strong>Project Timeframe: 5 days</strong></p>
+          <!-- <ul>
+            <li>Collaborated as a member of the front-end team to implement API calls from React to the Flask/PostgreSQL back-end.</li>
+            <li>Updated the layout and user interface to create visual interest and
+              improve user experience. (May 2023)</li>
+          </ul>
+        </div> -->
+      </article>
+      <article>
+        <img class="article-image image" src="/images/portfolio-screenshot.png"/>
+        <div class="project-info">
+          <h3>Art Portfolio</h3>
+          <p>Artist Portfolio created with Webflow</p>
+          <strong>May 2023</strong>
         </div>
-      </div>
-      
-      <div class="container">
-        <img src="/images/plants-screenshot.png" alt="plants app" class="image">
-        <div class="overlay-bottom-slide">
-          <div class="text">
-            <h3>My First Cloud Deployed App: Plants! App</h3>
-            <p>Built with Node.js, Express, and PostgreSQL</p>
-            <strong>August 2022</strong>
-            <a href="#"><p>Learn More >></p></a>
-          </div>
+      </article>
+      <!-- <article>
+        <div>
+          <h3>Patient Portal</h3>
+          <p>High-Level Design for a patient portal</p>
+          <strong>December 2022</strong>
+          <ul>
+            <li>Collaborated on the high-level design for a patient portal web application</li>
+            <li>Developed Software Requirement Specifications documents</li>
+            <li>Designed user interface in Figma</li>
+          </ul>
         </div>
-      </div>
-    </div>      
-  </section>
-  <!-- <section id="investigations" class="investigations">
-    <h2>Skill Building Side Projects</h2>
-    <div class="projects">
-      <div class="container">
-        <img src="/images/codebase-mentor-ecommerce.png" alt="codebase-mentor-ecommerce" class="image">
-        <div class="overlay-bottom-slide">
-          <div class="text">
-            <h3>Codebase Mentor's React Ecommerce</h3>
-            <p>Debugging and adding features to existing codebase</p>
-            <strong>May 2023</strong>
-            <a href="#"><p>Learn More >></p></a>
-          </div>
+        <div class="article-image image">
+          <iframe style="border: 0px; border-radius: 8px;" width="512" height="512" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F01ToK0wUKwlwa5tCshJioA%2FMobile-Prototype%3Ftype%3Ddesign%26node-id%3D1-151%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A151" allowfullscreen></iframe>
         </div>
-      </div>
-      <div class="container">
-        <img src="/images/mobilegraph-sim.png" alt="instagram clone with react native" class="image">
-        <div class="overlay-bottom-slide">
-          <div class="text">
-            <h3>React Native Instagram Clone</h3>
-            <p>Bug fixing, refactoring and extending existing implementation</p>
-            <strong>May 2023</strong>
-            <a href="#"><p>Learn More >></p></a>
-          </div>
+      </article> -->
+      <!-- <article>
+        <div>
+          <h3>Plants! App</h3>
+          <p>Plant care tracker</p>
+          <strong>August 2022</strong>
+          <ul>
+            <li>Built with Node.js, Express, Pug, PostgreSQL</li>
+            <li>Development and deployment with OpenShift and Google Cloud Platform</li>
+          </ul>
         </div>
-      </div>
-      </div>
-      </section> -->
-  <footer id="footer">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/k7473/" target="_blank">
-            LinkedIn
-            <span class="link-icon">
-              <i class="fa-brands fa-linkedin"></i>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="https://kellytate.github.io/images/KellyTateResume2023.pdf" target="_blank">
-            Resume
-            <span class="link-icon">
-              <i class="fa-solid fa-user"></i>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/kellytate" target="_blank">
-            GitHub
-            <span class="link-icon">
-              <i class="fa-brands fa-github"></i>
-            </span>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright">© 2023 Kelly Tate</p>
-    </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+        <img class="article-image image" src="/images/plants-screenshot.png"/>
+      </article> -->
+    </section>
+    <footer id="footer">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/k7473/" target="_blank">
+              LinkedIn
+              <span class="link-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://kellytate.github.io/images/KellyTateResume2023.pdf" target="_blank">
+              Resume
+              <span class="link-icon">
+                <i class="fa-solid fa-user"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/kellytate" target="_blank">
+              GitHub
+              <span class="link-icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">© 2023 Kelly Tate</p>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>

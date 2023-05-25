@@ -41,12 +41,12 @@ h2,
 h3,
 h4 {
     font-family: "Jost", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h1 {
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 0 !important;
 }
 
@@ -56,7 +56,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 h4 {
@@ -88,6 +89,7 @@ header nav li {
     margin-inline-start: 1rem;
     font-family: "Jost", sans-serif;
     font-weight: 200;
+    font-size: 1.2rem;
 }
 
 header nav a, header nav li a {
@@ -95,9 +97,9 @@ header nav a, header nav li a {
     color: var(--primary);
 }
 
-header nav a:hover, header nav li a:hover {
+/* header nav a:hover, header nav li a:hover {
     color: #79a097;
-}
+} */
 
 header .controls {
     display: flex;
@@ -116,18 +118,25 @@ header {
 
 .bio {
     display: flex;
-    align-items: flex-start;
     padding-block-end: 4rem;
     padding-block-start: 4rem;
     height: 65vh;
 }
 
 .bio .profile-image {
-    width: 200px;
-    min-width: 200px;
-    border-radius: 100px;
+    width: 250px;
+    /* min-width: 200px; */
+    height: 75%;
+    border-radius: 1px;
     background: #888;
     margin-inline-end: 4rem;
+    object-fit: cover;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -161,7 +170,7 @@ header {
     font-size: 1.2rem;
 }
 
-a.btn {
+/* a.btn {
     display: inline-flex;
     align-items: center;
     background: var(--link);
@@ -170,6 +179,21 @@ a.btn {
     padding: 0 1rem;
     height: 3rem;
     border-radius: 100px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+} */
+
+a.btn {
+    display: inline-flex;
+    align-items: center;
+    background: #000000;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 3rem;
+    border: 1px #262626 solid;
+    /* border-radius: 100px; */
     font-family: "Jost", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -187,11 +211,11 @@ a.btn {
 
 .contact .link-icon {
     margin-block-start: 0.5rem;
-    background: var(--link);
-    color: var(--background);
+    background: #000000;
+    color: var(--primary);
     width: 3rem;
     height: 3rem;
-    border-radius: 1.5rem;
+    /* border-radius: 1.5rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,6 +258,7 @@ a.btn {
 article {
     display: flex;
     padding: 3rem 0;
+    align-items: top;
 }
 
 article strong {
@@ -256,19 +281,26 @@ article li {
 }
 
 article .article-image {
-    width: 512px;
-    max-width: 512px;
+    width: 495px;
+    height: 330px;
+    object-position: 0% 0%; /* default position */
+    /* max-width: 512px;
     min-width: 512px;
-    /* max-height: 271px; */
+    max-height: 271px; */
+    object-fit: cover;
     margin-left: 5%;
-    border-radius: 8px;
+    border-radius: 1px;
     border: 1px solid rgba(109, 109, 1, 0.1)
 }
 
 article .article-image:hover{
-    outline:rgba(109, 109, 1, 0.1);
-    box-shadow: 0 0 5px #79a097;
+    /* outline:rgba(109, 109, 1, 0.1);
+    box-shadow: 0 0 5px #79a097; */
     cursor: pointer;
+}
+
+.project-info {
+    padding-left: 40px;
 }
 
 .resume_file {
@@ -339,8 +371,7 @@ footer .copyright {
 
 footer .link-icon {
     margin-block-start: 0.5rem;
-    background: var(--link);
-    color: var(--background);
+    color: var(--primary);
     width: 3rem;
     height: 3rem;
     border-radius: 1.5rem;
@@ -381,7 +412,7 @@ footer .link-icon {
     width: 100%;
     height: auto;
     opacity: 1;
-    border-radius: 8px;
+    border-radius: 1px;
 }
 
 .overlay-bottom-slide {
@@ -395,7 +426,7 @@ footer .link-icon {
     overflow: hidden;
     transition: .5s ease;
     background-color: #141416;
-    border-radius: 8px;
+    border-radius: 1px;
 }
 
 .container:hover.image {
@@ -426,4 +457,16 @@ footer .link-icon {
     font-weight: 600;
     letter-spacing: 0.15em;
     text-decoration: none;
+}
+
+#blog-link {
+    border: 1px solid #262626;
+    padding: 10px;
+}
+
+.bio-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
