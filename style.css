@@ -144,6 +144,7 @@ header {
 
 .bio h2 {
     margin-block-end: 0;
+    font-size: 3.5rem;
 }
 
 .contact h2 {
@@ -157,6 +158,7 @@ header {
 
 .bio p {
     margin: 1.5rem 0;
+    font-size: 1.2rem;
 }
 
 a.btn {
