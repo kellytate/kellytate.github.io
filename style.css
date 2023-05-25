@@ -1,7 +1,7 @@
 body {
     color: var(--primary);
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Jost", sans-serif;
     background: var(--background);
     margin: 0 auto;
     padding: 0 1rem;
@@ -15,6 +15,7 @@ body {
 a {
     color: var(--link);
     text-decoration: none;
+    font-weight: 400;
 }
 
 .light-theme {
@@ -28,38 +29,48 @@ a {
 }
 
 .dark-theme {
-    --dark-background: #141416;
-    --dark-primary: #dbdbdb;
+    --dark-background: #000000;
+    --dark-primary: #ffffff;
     --dark-link: #79a097;
     --background: var(--dark-background);
     --primary: var(--dark-primary);
     --link: var(--dark-link); 
 }
 
-h1,
 h2,
-h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+h3,
+h4 {
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-weight: 300;
+    font-size: 5rem;
+    margin-bottom: 0 !important;
 }
 
 h2 {
     font-size: 3rem;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-left: 2rem;
+    font-weight: 300;
+}
+
 /* separation bars */
-nav,
+/* nav,
 section {
     border-block-end: 1px solid var(--primary);
-}
+} */
 
 header nav {
     display: flex;
@@ -75,13 +86,17 @@ header nav ul {
 header nav li {
     display: inline;
     margin-inline-start: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
 }
 
 header nav a, header nav li a {
     text-decoration: none;
     color: var(--primary);
+}
+
+header nav a:hover, header nav li a:hover {
+    color: #79a097;
 }
 
 header .controls {
@@ -94,10 +109,17 @@ header {
     background: var(--background);
 }
 
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
 .bio {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-block-end: 4rem;
+    padding-block-start: 4rem;
+    height: 65vh;
 }
 
 .bio .profile-image {
@@ -146,9 +168,9 @@ a.btn {
     padding: 0 1rem;
     height: 3rem;
     border-radius: 100px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 0.875rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .contact ul {
@@ -204,6 +226,7 @@ a.btn {
 
 .project-image {
     width: 100%;
+    border: 1px solid #141416;
 }
 
 article {
@@ -299,13 +322,17 @@ footer a {
     flex-direction: column;
     color: var(--primary);
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
     align-items: center;
 }
 
 footer .copyright {
     margin: 3rem 0;
+}
+
+.copyright {
+    color: #5d5b5b !important;
 }
 
 footer .link-icon {
@@ -365,7 +392,7 @@ footer .link-icon {
     width:100%;
     overflow: hidden;
     transition: .5s ease;
-    background-color: #79a097;
+    background-color: #141416;
     border-radius: 8px;
 }
 
@@ -376,13 +403,13 @@ footer .link-icon {
 .container:hover .overlay-bottom-slide {
     top: 0;
     height: 100%;
-    opacity:0.95;
+    opacity:1;
     }
 
 .text {
     color: var(--primary);
     font-weight: 600;
-    letter-spacing: 0.15em;
+    /* font-family: 'Lato'; */
     padding: 0px;  
     text-align: left;      
     position:absolute;
