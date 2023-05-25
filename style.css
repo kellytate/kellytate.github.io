@@ -498,9 +498,7 @@ footer .link-icon {
     }
 
     .bio .profile-image {
-        width: 95%;
-        height: 20rem;
-        object-fit: cover;
+        display: none;
     }
 
     .articles {
@@ -540,5 +538,16 @@ footer .link-icon {
 
     .bio h2 {
         font-size: 3rem;
+    }
+
+    .contact .profile-image {
+        display: flex;
+        width: 95%;
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
     }
 }
