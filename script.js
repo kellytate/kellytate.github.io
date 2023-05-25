@@ -126,3 +126,20 @@ indexBtn.addEventListener('click', () => {
   }
 })
 
+
+let mobileMenuBtn = document.querySelector('#mobile-menu-icon')
+mobileMenuBtn.addEventListener('click', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (!mobileMenu.classList.contains("hide")) {
+    mobileMenu.classList.add("hide");
+    // mobileMenu.classList.remove("mobile");
+  }
+  else {
+    mobileMenu.classList.remove("hide");
+    // mobileMenu.classList.add("mobile");
+  }
+
+  // if (navMenu.style.display == 'flex') {
+  //   navMenu.style.display = 'none';
+  // }
+})
