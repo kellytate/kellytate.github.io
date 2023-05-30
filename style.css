@@ -483,6 +483,11 @@ footer .link-icon {
     padding: 10px;
 }
 
+#contact {
+    flex-direction: row;
+    align-items: center;
+}
+
 .bio-image {
     display: flex;
     flex-direction: column;
@@ -522,14 +527,17 @@ footer .link-icon {
     gap: 1rem;
     width: 150px;
     min-width: 150px;
-    height: 30vh;
+    height: 20vh;
     background-color: #000000;
+    opacity: 0.9;
     /* border: 1px solid #262626; */
     margin-top: 8rem;
     margin-left: 50%;
     margin-right: 0px;
-    padding: 2rem;
+    /* padding: 2rem; */
+
     z-index: 100;
+    position: absolute
 }
 
 #mobile-menu-icon {
