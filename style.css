@@ -80,6 +80,7 @@ section {
 header nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
 }
 
 header nav ul {
