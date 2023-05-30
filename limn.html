@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
   <link href="style.css" rel="stylesheet">
-  <link rel="stylesheet" href="toggle-switch.css">
+  <!-- <link rel="stylesheet" href="toggle-switch.css"> -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 <body>
   <header>
@@ -20,14 +21,21 @@
         <a id="index-link" href="/index.html"><h1>kellytate</h1></a>
         <h4>//portfolio</h4>
       </div>
-      <ul>
-        <li><a id="recent-work-link" href="#recent-work">Work</a></li>
-        <li><a id="resume-link" href="#">Resume</a></li>
-        <li><a id="contact-link" href="#">Contact</a></li>
-        <li><a id="blog-link" href="https://tech-blog-a15e2c.webflow.io/">Tech Blog</a></li>
+      <!-- <ul id="full-menu">
+        <li><a id="recent-work-link" href="#recent-work">work</a></li>
+        <li><a id="resume-link" href="#">resume</a></li>
+        <li><a id="contact-link" href="#">contact</a></li>
+        <li><a id="blog-link" href="https://tech-blog-a15e2c.webflow.io/">tech blog</a></li>
+      </ul> -->
+      <ul id="mobile-menu" class="hide">
+        <li><a id="recent-work-link" href="/index.html#recent-work">work</a></li>
+        <li><a id="resume-link" href="#">resume</a></li>
+        <li><a id="contact-link" href="/index.html#contact">contact</a></li>
+        <li><a id="blog-link" href="https://kellytatetech.webflow.io/">tech blog</a></li>
       </ul>
+      <div id="mobile-menu-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
     </nav>
-    <div class="controls">
+    <!-- <div class="controls">
       <label class="toggle-switch">
         Dark Mode
         <input type="checkbox" id="dark-mode-toggle">
@@ -35,7 +43,7 @@
         <div class="toggle-switch-dot"></div>
         </div>
       </label>
-    </div>
+    </div> -->
   </header>
   <section class="project">
     <h2>Limn Social Journal</h2>
