@@ -1,8 +1,8 @@
 // Adds dark/light mode functionality
-let toggle = document.querySelector('#dark-mode-toggle');
-toggle.addEventListener('click', () => { 
-  updateMode();
-})
+// let toggle = document.querySelector('#dark-mode-toggle');
+// toggle.addEventListener('click', () => { 
+//   updateMode();
+// })
 
 function updateMode() {
   let mode = toggle.checked ? 'dark' : 'light';
@@ -16,7 +16,7 @@ function loadToggle() {
   document.getElementById("dark-mode-toggle").checked = checked;
 }
 
-loadToggle();
+// loadToggle();
 
 function saveToggle() {
   var checkbox = document.getElementById('dark-mode-toggle');
@@ -126,3 +126,13 @@ indexBtn.addEventListener('click', () => {
   }
 })
 
+let mobileMenuBtn = document.querySelector('#mobile-menu-icon')
+mobileMenuBtn.addEventListener('click', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (!mobileMenu.classList.contains("hide")) {
+    mobileMenu.classList.add("hide");
+  }
+  else {
+    mobileMenu.classList.remove("hide");
+  }
+})
