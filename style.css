@@ -298,6 +298,10 @@ nav {
     margin-left: 2rem;
 }
 
+.brand a {
+    color: #ffffff;
+}
+
 .bio {
     display: flex;
     padding-block-end: 4rem;
