@@ -104,9 +104,6 @@ recentWorkBtn.addEventListener('click', () => {
   if (!resume.classList.contains("hide")) {
     resume.classList.add("hide");
   }
-  if (bio.classList.contains("hide")) {
-    bio.classList.remove("hide");
-  }
   if (recentWork.classList.contains("hide")) {
     recentWork.classList.remove("hide");
   }
