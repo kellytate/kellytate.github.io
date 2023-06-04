@@ -56,8 +56,8 @@ contactBtn.addEventListener('click', () => {
   if (!resume.classList.contains("hide")) {
     resume.classList.add("hide");
   }
-  if (recentWork.classList.contains("hide")) {
-    recentWork.classList.remove("hide");
+  if (!recentWork.classList.contains("hide")) {
+    recentWork.classList.add("hide");
   }
   if (contact.classList.contains("hide")) {
     contact.classList.remove("hide");
