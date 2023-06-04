@@ -283,6 +283,10 @@ ul{
     flex-direction: column;
 }
 
+.brand a {
+    color: #ffffff;
+}
+
 .brand h4 {
     margin-top: 0px;
     margin-left: 2rem;
