@@ -48,6 +48,8 @@ contactBtn.addEventListener('click', () => {
   const resume = document.getElementById('resume');
   const contact = document.getElementById('contact');
   const recentWork = document.getElementById('recent-work');
+  const sideMenu = document.getElementById('side-menu');
+  sideMenu.checked = false;
   if (!bio.classList.contains("hide")) {
     bio.classList.add("hide");
   }
@@ -69,6 +71,8 @@ resumeBtn.addEventListener('click', () => {
   const contact = document.getElementById('contact');
   const resume = document.getElementById('resume');
   const recentWork = document.getElementById('recent-work');
+  const sideMenu = document.getElementById('side-menu');
+  sideMenu.checked = false;
   if (!bio.classList.contains("hide")) {
     bio.classList.add("hide");
   }
@@ -89,6 +93,8 @@ recentWorkBtn.addEventListener('click', () => {
   const contact = document.getElementById('contact');
   const resume = document.getElementById('resume');
   const recentWork = document.getElementById('recent-work');
+  const sideMenu = document.getElementById('side-menu');
+  sideMenu.checked = false;
   if (!bio.classList.contains("hide")) {
     bio.classList.add("hide");
   }
@@ -112,6 +118,8 @@ indexBtn.addEventListener('click', () => {
   const contact = document.getElementById('contact');
   const resume = document.getElementById('resume');
   const recentWork = document.getElementById('recent-work');
+  const sideMenu = document.getElementById('side-menu');
+  sideMenu.checked = false;
   if (!contact.classList.contains("hide")) {
     contact.classList.add("hide");
   }
@@ -126,13 +134,13 @@ indexBtn.addEventListener('click', () => {
   }
 })
 
-let mobileMenuBtn = document.querySelector('#mobile-menu-icon')
-mobileMenuBtn.addEventListener('click', () => {
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (!mobileMenu.classList.contains("hide")) {
-    mobileMenu.classList.add("hide");
-  }
-  else {
-    mobileMenu.classList.remove("hide");
-  }
-})
+// let mobileMenuBtn = document.querySelector('#mobile-menu-icon')
+// mobileMenuBtn.addEventListener('click', () => {
+//   const mobileMenu = document.getElementById('mobile-menu');
+//   if (!mobileMenu.classList.contains("hide")) {
+//     mobileMenu.classList.add("hide");
+//   }
+//   else {
+//     mobileMenu.classList.remove("hide");
+//   }
+// })
