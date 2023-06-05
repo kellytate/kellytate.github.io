@@ -1,6 +1,6 @@
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
-document.body.scrollTop = 0; // For Safari
+// document.body.scrollTop = 0; // For Safari
 
 // Adds dark/light mode functionality
 // let toggle = document.querySelector('#dark-mode-toggle');
