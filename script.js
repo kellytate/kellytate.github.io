@@ -91,6 +91,30 @@ resumeBtn.addEventListener('click', () => {
   }
 })
 
+let seeWorkBtn = document.querySelector('#seeWorkBtn')
+seeWorkBtn.addEventListener('click', () => {
+  const bio = document.getElementById('bio');
+  const contact = document.getElementById('contact');
+  const resume = document.getElementById('resume');
+  const recentWork = document.getElementById('recent-work');
+  const sideMenu = document.getElementById('side-menu');
+  sideMenu.checked = false;
+  if (!bio.classList.contains("hide")) {
+    bio.classList.add("hide");
+  }
+  if (!contact.classList.contains("hide")) {
+    contact.classList.add("hide");
+  }
+  if (!resume.classList.contains("hide")) {
+    resume.classList.add("hide");
+  }
+  if (recentWork.classList.contains("hide")) {
+    recentWork.classList.remove("hide");
+  }
+
+})
+
+
 let recentWorkBtn = document.querySelector('#recent-work-link')
 recentWorkBtn.addEventListener('click', () => {
   const bio = document.getElementById('bio');
@@ -111,9 +135,6 @@ recentWorkBtn.addEventListener('click', () => {
   if (recentWork.classList.contains("hide")) {
     recentWork.classList.remove("hide");
   }
-  // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-
-  // document.body.scrollTop = 0; // For Safari
 
 })
 
