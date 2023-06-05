@@ -155,7 +155,7 @@ nav {
     width: 100%;
     height: fit-content;
     margin-top: 180px;
-    position: fixed;
+    position: absolute;
     padding-left: 0;
     background-color: #000000;
     overflow: hidden;
