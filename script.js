@@ -1,3 +1,7 @@
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+document.body.scrollTop = 0; // For Safari
+
 // Adds dark/light mode functionality
 // let toggle = document.querySelector('#dark-mode-toggle');
 // toggle.addEventListener('click', () => { 
@@ -107,6 +111,10 @@ recentWorkBtn.addEventListener('click', () => {
   if (recentWork.classList.contains("hide")) {
     recentWork.classList.remove("hide");
   }
+  // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+  // document.body.scrollTop = 0; // For Safari
+
 })
 
 let indexBtn = document.querySelector('#index-link')
@@ -126,8 +134,8 @@ indexBtn.addEventListener('click', () => {
   if (bio.classList.contains("hide")) {
     bio.classList.remove("hide");
   }
-  if (recentWork.classList.contains("hide")) {
-    recentWork.classList.remove("hide");
+  if (!recentWork.classList.contains("hide")) {
+    recentWork.classList.add("hide");
   }
 })
 
