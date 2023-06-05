@@ -6,9 +6,12 @@ body {
     margin: 0;
     padding: 0 1rem;
     max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
     transition: color 0.5s;
     transition: background 0.5s;
+    
 
     --dark-background: #000000;
     --dark-primary: #ffffff;
@@ -71,47 +74,6 @@ h4 {
     font-weight: 300;
 }
 
-/* separation bars */
-/* nav,
-section {
-    border-block-end: 1px solid var(--primary);
-} */
-
-/* header nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2em;
-}
-
-header nav ul {
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-header nav li {
-    display: inline;
-    margin-inline-start: 1rem;
-    font-family: "Jost", sans-serif;
-    font-weight: 200;
-    font-size: 1.2rem;
-}
-
-*/
-/* .header .nav a, .header .nav li a {
-    text-decoration: none;
-    color: var(--primary);
-} */
-/*
-header .controls {
-    display: flex;
-    justify-content: end;
-    padding: 1rem 0;
-}
-
-header {
-    background: var(--background);
-} */
 
 /* * {
     margin: 0;
@@ -127,7 +89,7 @@ ul{
 }
 
 .recent-work {
-    padding-top: 200px;
+    /* margin-top: 200px; */
 }
 
 /* Header */
@@ -141,28 +103,21 @@ ul{
     justify-content: space-between;
     /* margin-bottom: 100px; */
 }
-/* Logo */
-/* .logo{
-    display: inline-block;
-    color: var(--white);
-    font-size: 60px;
-    margin-left: 10px;
-} */
+
 
 /* Nav menu */
-nav {
+.nav {
     max-width: 1024px;
     width: 100%;
     height: fit-content;
-    margin-top: 180px;
-    position: absolute;
+    top: 10em;
+    position: fixed;
     padding-left: 0;
     background-color: #000000;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
 }
 
 .menu {
@@ -644,9 +599,9 @@ footer .link-icon {
 
 @media only screen and (min-width: 1024px) {
     body {
-        margin: 0px;
-        margin-left: 2rem;
-        margin-right: auto;
+        /* margin: 0px; */
+        /* margin-left: 2rem; */
+        /* margin-right: auto; */
         /* margin-right: auto !important;
         margin-left: auto !important; */
     }
@@ -719,18 +674,23 @@ footer .link-icon {
 }
 
 @media only screen and (max-width: 768px) {
+
+    
     
     .recent-work {
-        padding-top: 175px;
+        /* margin-top: 175px; */
     }
 }
 
 @media only screen and (max-width: 500px) {
     
-
-    .recent-work {
-        padding-top: 150px;
-    }
+    /* body {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        margin-left: auto;
+    } */
 
     .header {
         width: 100%;
