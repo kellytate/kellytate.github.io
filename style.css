@@ -276,11 +276,11 @@ ul{
     object-fit: cover;
 }
 
-.bio-content {
+/* .bio-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .bio h2 {
     margin-block-end: 0;
